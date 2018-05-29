@@ -19,20 +19,20 @@
   width: 20%;
   text-align: center;
 }
-.bottomNav a:hover, a:focus{
+.bottomNav a:focus,a:hover{
   color: #20a0ff;
 }
 .bottomNav link{
-  display: flex;
+  display:flex;
   flex-direction:column;
-  line-height: 49px;
 }
 .bottomNav span{
   display: block;
 }
-.bottomNav .title{
+.bottomNav .barTitle{
   font-size: 8px;
 }
 .bigicon{
   font-size: 25px;
+  cursor: pointer;
 }

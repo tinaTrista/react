@@ -11,14 +11,13 @@ class ROUTER extends React.Component{
         return (
             <div>
                 <BrowserRouter>
-                  <div>
-                  <Route path="/" component={App}/>
+                  <App>
+                  <Route exact path="/" component={find}/>
                   <Route path="/my" component={My}/>
                   <Route path="/friends" component={friends}/>
                   <Route path="/video" component={video}/>
                   <Route path="/user" component={user}/>
-                  <Route path="/find" component={find}/>
-                  </div>
+                  </App>
                 </BrowserRouter>
             </div>
         )

@@ -1,19 +1,20 @@
-.head{
+.title{
   height:50px;
   line-height: 50px;
   width:100%;
   box-sizing: border-box;
   display: flex;
+  background-color:#fff;
+  border-bottom:1px solid #eee;
 }
-.head .search{
+.title .search{
   width:calc(100% - 40px);
+  text-align: center;
 }
-.head .iconfont{
+.title .iconfont{
   padding:0px 10px;
 }
-.head span{
-  cursor: pointer;
-}
-.head span:hover, span:focus{
+
+.title span:hover, span:focus{
   color: #20a0ff;
 }
