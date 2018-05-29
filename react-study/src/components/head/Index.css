@@ -1,4 +1,19 @@
-
-.search{
+.head{
+  height:50px;
+  line-height: 50px;
   width:100%;
+  box-sizing: border-box;
+  display: flex;
+}
+.head .search{
+  width:calc(100% - 40px);
+}
+.head .iconfont{
+  padding:0px 10px;
+}
+.head span{
+  cursor: pointer;
+}
+.head span:hover, span:focus{
+  color: #20a0ff;
 }

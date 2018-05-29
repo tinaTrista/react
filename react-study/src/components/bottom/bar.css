@@ -12,20 +12,27 @@
   height: 100%;
   text-align: center;
   color: #000;
-  line-height: 49px;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  line-height: 50px;
   width: 20%;
   text-align: center;
 }
-.bottomNav a.active , a:focus{
-  font-size: 16px;
-  color: #26a2ff;
-  border-top: 3px solid #26a2ff;
-}
-.bottomNav a:hover{
+.bottomNav a:hover, a:focus{
   color: #20a0ff;
+}
+.bottomNav link{
+  display: flex;
+  flex-direction:column;
+  line-height: 49px;
+}
+.bottomNav span{
+  display: block;
+}
+.bottomNav .title{
+  font-size: 8px;
+}
+.bigicon{
+  font-size: 25px;
 }
