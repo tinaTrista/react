@@ -10,19 +10,20 @@ const tabs = [
   {'title':'账号','href':'/user','icon':'iconfont bigicon icon-zhanghao'}
 ];
 
-const listItems = tabs.map((item, index) =>
-  <Link key={index} to={item.href} className='link'>
-  <span className={item.icon}></span>
-  <span className='barTitle'>{item.title}</span>
-  </Link>
-);
 class BottomBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    };
+    }
   }
   render() {
+    const listItems = tabs.map((item, index) =>
+      <Link key={index} to={item.href}
+      className={this.props.path === item.href ? 'link active' : 'link'}>
+         <span className={item.icon}></span>
+         <span className='barTitle'>{item.title}</span>
+      </Link>
+    );
     return (
       <div className="bottomNav">
       {listItems}

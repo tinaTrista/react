@@ -1,7 +1,13 @@
 import React from 'react'
+import BottomBar from "../../components/bottom/Index"
 class Friends extends React.Component{
   render() {
-    return (<h1>hello Friends</h1>)
+    return (
+      <div>
+      <span>hello Friends</span>
+      <BottomBar path={this.props.location.pathname}/>
+      </div>
+    )
   }
 }
 export default Friends

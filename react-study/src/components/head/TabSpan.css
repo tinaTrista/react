@@ -1,11 +1,14 @@
-.tabbar {
+.TabSpan {
   width:100%;
   height:35px;
   line-height: 35px;
   display: flex;
   background-color: #fff;
+  position: fixed;
+  top:50px;
+  z-index: 99;
 }
-.tabbar a {
+.TabSpan .span {
   height: 100%;
   text-align: center;
   color: #000;
@@ -15,7 +18,7 @@
   box-sizing: border-box;
   text-align: center;
 }
-.tabbar a:focus,a:hover{
+.tabbar .span:focus,.span:hover{
   color: #20a0ff;
   border-bottom:3px solid #20a0ff;
 }

@@ -1,26 +1,27 @@
+
 .bottomNav{
-  position: absolute;
+  position: fixed;
   bottom:0px;
   width:100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 50px;
-  background-color: #fff;
+  z-index: 99;
+  color: #fff;
+  background:#282828;
 }
 .bottomNav a {
-  height: 100%;
   text-align: center;
-  color: #000;
+  color: #808080;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 20%;
-  text-align: center;
 }
-.bottomNav a:focus,a:hover{
-  color: #20a0ff;
+.bottomNav a:focus,a.active {
+  color: #fff;
 }
 .bottomNav link{
   display:flex;

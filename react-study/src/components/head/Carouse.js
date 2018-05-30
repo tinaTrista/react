@@ -1,5 +1,6 @@
 import React from 'react'
 import {Carousel} from 'antd-mobile'
+import './Index.css'
 // src={`images/${val}.png`} 引入外部图片
 
 
@@ -18,6 +19,7 @@ class Carouse extends React.Component{
   }
   render() {
     return (
+      <div className="ca-position">
       <Carousel
           autoplay={false}
           infinite
@@ -44,6 +46,8 @@ class Carouse extends React.Component{
           ))
       }
       </Carousel>
+      </div>
+
     )
   }
 }

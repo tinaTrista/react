@@ -1,5 +1,5 @@
 import React from 'react'
-import { Router, Route ,BrowserRouter} from 'react-router-dom'
+import { Route ,BrowserRouter} from 'react-router-dom'
 import App from '../App'
 import My from '../view/my/Index'
 import friends from '../view/friends/Index'

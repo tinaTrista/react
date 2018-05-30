@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from "../../components/head/Index"
+import BottomBar from "../../components/bottom/Index"
 const tabs = [
   {'title':'推荐','href':'', 'icon':'iconfont bigicon icon-faxian'},
   {'title':'音乐','href':'','icon':'iconfont bigicon icon-shipin1'},
@@ -12,6 +13,7 @@ class Video extends React.Component{
     return (
       <div className='find'>
         <Head tabs={tabs}/>
+        <BottomBar path={this.props.location.pathname}/>
       </div>
     )
   }

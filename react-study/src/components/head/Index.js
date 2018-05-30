@@ -1,7 +1,7 @@
 import React from 'react'
 import './Index.css'
 import Title from "./Title"
-import TabBar from './TabBar'
+import TabSpan from './TabSpan'
 
 class Head extends React.Component{
   constructor(props) {
@@ -13,7 +13,7 @@ class Head extends React.Component{
     return (
       <div className="head">
         <Title/>
-        <TabBar tabs={this.props.tabs}/>
+        <TabSpan tabs={this.props.tabs}/>
       </div>
     )
   }

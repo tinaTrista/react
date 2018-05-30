@@ -1,5 +1,5 @@
 import React from 'react'
-import {SearchBar,Button} from 'antd-mobile'
+import {SearchBar} from 'antd-mobile'
 import './Index.css'
 class Title extends React.Component{
   render() {

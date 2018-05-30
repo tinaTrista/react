@@ -5,6 +5,7 @@
   "dependencies": {
     "antd-mobile": "^2.1.9",
     "autoprefixer": "7.1.6",
+    "axios": "^0.18.0",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
     "babel-jest": "20.0.3",
@@ -67,7 +68,7 @@
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
     ],
     "testEnvironment": "node",
-    "testURL": "http://localhost",
+    "testURL": "http://192.168.1.122",
     "transform": {
       "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
@@ -96,5 +97,31 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "proxy": {
+    "/proxy/": {
+      "target": "http://m.kugou.com",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/proxy": ""
+      }
+    },
+    "/sproxy/": {
+      "target": "http://mobilecdn.kugou.com/api/v3",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/sproxy": ""
+      }
+    },
+    "/dproxy/": {
+      "target": "http://www.kugou.com",
+      "secure": false,
+      "changeOrigin": true,
+      "pathRewrite": {
+        "^/dproxy": ""
+      }
+    }
   }
 }
