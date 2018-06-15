@@ -8,9 +8,9 @@
   top:50px;
   z-index: 99;
 }
-.TabSpan .span {
+.TabSpan .tab {
+  position: relative;
   height: 100%;
-  text-align: center;
   color: #000;
   cursor: pointer;
   -webkit-box-sizing: border-box;
@@ -18,7 +18,16 @@
   box-sizing: border-box;
   text-align: center;
 }
-.tabbar .span:focus,.span:hover{
-  color: #20a0ff;
-  border-bottom:3px solid #20a0ff;
+.tabbar .span{
+   margin: auto;
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+}
+/* 设置一个div 在另一个div 里居中*/
+.tabbar .span:focus,.span.active{
+  color: rgb(212, 68, 57);
+  border-bottom:3px solid rgb(212, 68, 57);
 }

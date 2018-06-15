@@ -5,13 +5,14 @@ class TabSpan extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this)
     this.state = {
+      'activeTab':0
     };
   }
   handleClick(index) {
     this.props.onTabChange(index);
   }
   render() {
-    let tabwidth = (100 / this.props.tabs.length) + '%' ;
+    let tabwidth = (100 / this.props.tabs.length+1) + '%' ;
     return (
       <div className="TabSpan">
       {
@@ -19,10 +20,10 @@ class TabSpan extends React.Component {
           <div
           key={index}
           style={{width:tabwidth}}
-          className='span'
+          className='tab'
           onClick={this.handleClick.bind(this, index)}
           >
-          <span>{item.title}</span>
+          <div className={this.state.activeTab === index ? 'span active' : 'span'}>{item.title}</div>
           </div>
         )
       }

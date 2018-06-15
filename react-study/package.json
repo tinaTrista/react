@@ -54,7 +54,8 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "babel-plugin-import": "^1.7.0"
+    "babel-plugin-import": "^1.7.0",
+    "mockjs": "^1.0.1-beta3"
   },
   "jest": {
     "collectCoverageFrom": [

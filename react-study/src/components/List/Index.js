@@ -1,6 +1,7 @@
 import React from "react"
 import $http from "../../axios"
-import {WingBlank} from 'antd-mobile';
+import "../../data/mock"
+import {WingBlank} from 'antd-mobile'
 import './Index.css'
 
 class CardList extends React.Component {
@@ -19,6 +20,11 @@ class CardList extends React.Component {
     }).catch(err => {
       console.log(err)
     })
+    // 利用mock伪装的假数据
+    $http.get("/test").then(
+              (successData) => {console.log(successData);},
+              (fileData) => {console.log(fileData);}
+    );
   }
   // 展示数据
   render() {
